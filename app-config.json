@@ -360,7 +360,7 @@
       "frequency": "weekly", 
       "cloudBackup": {
         "enabled": true,
-        "provider": "googleDrive" /
+        "provider": "googleDrive" 
       }
     },
     "additionalSecurity": {
