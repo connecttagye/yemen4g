@@ -1,0 +1,538 @@
+{
+  "appInfo": {
+    "id": "ap58",
+    "name": "يمن فورجي",
+    "nameEn": "Yemen4g",
+    "version": "1.0.0",
+    "accessPublicKey": "fhy56871bfds",
+    "descriptionShort": "تطبيق Yemen4G لإدارة اتصالات 4G.",
+    "description": "تطبيق Yemen4G لإدارة اتصالات 4G.",
+    "email": "app@example.com",
+    "website": "https://example.com",
+    "phoneNumber": "",
+    "image": "https://example.com",
+    "imageFetchType": "request",
+    "imageBackground": "https://example.com",
+    "imageBackgroundFetchType": "request",
+    "active": true,
+    "socialMediaList": [
+      {
+        "name": "facebook",
+        "actionType": "openUrl",
+        "action": "https://facebook.com/yemen4g",
+        "description": "حسابنا فيس",
+        "image": "https://example.com/facebook.png",
+        "imageFetchType": "request",
+        "orderIndex": "1",
+        "active": true
+      },
+      {
+        "name": "واتساب",
+        "actionType": "openApp",
+        "action": "https://apiwhatsaapp.com/yemen4g",
+        "description": "تابعنا",
+        "image": "whatsapp",
+        "imageFetchType": "vector",
+        "orderIndex": "2",
+        "active": true
+      }
+    ]
+  },
+  "settings": {
+    "theme": {
+      "default": "dark",
+      "options": ["light", "dark", "system"],
+      "allowUserChange": true,
+      "customThemes": [
+        {
+          "name": "أزرق",
+          "primaryColor": "#0000FF",
+          "secondaryColor": "#ADD8E6",
+          "textColor": "#FFFFFF"
+        },
+        {
+          "name": "أخضر",
+          "primaryColor": "#008000",
+          "secondaryColor": "#90EE90",
+          "textColor": "#000000"
+        }
+      ]
+    },
+    "language": {
+      "default": "ar",
+      "options": ["ar", "en", "fr"],
+      "allowUserChange": true,
+      "dynamicLanguageSupport": true,
+      "languageFileUrl": "https://example.com/languages.json"
+    },
+    "notifications": {
+      "enabled": true,
+      "types": {
+        "promotional": true,
+        "system": true,
+        "updates": true
+      },
+      "sounds": {
+        "enabled": true,
+        "customSounds": {
+          "promotional": "sound1.mp3",
+          "system": "sound2.mp3"
+        }
+      }
+    },
+    "onboarding": {
+      "enabled": false,
+      "steps": [
+        {
+          "title": "مرحبًا",
+          "description": "مرحبًا بك في Yemen4G",
+          "image": "https://example.com/onboarding1.png"
+        },
+        {
+          "title": "إدارة الاتصالات",
+          "description": "إدارة اتصالات 4G بسهولة",
+          "image": "https://example.com/onboarding2.png"
+        }
+      ]
+    },
+    "permissions": {
+      "location": {
+        "enabled": true,
+        "required": true,
+        "requestType": "onAction",
+        "requestContext": "عند تحديد الموقع",
+        "content": "نحتاج إلى الوصول إلى موقعك لتوفير خدمات أفضل.",
+        "fallbackAction": "disableFeature"
+      },
+      "camera": {
+        "enabled": true,
+        "required": false,
+        "requestType": "onScreenOpen",
+        "requestContext": "عند فتح شاشة المسح",
+        "content": "نحتاج إلى الوصول إلى الكاميرا لمسح الرموز.",
+        "fallbackAction": "showWarning"
+      },
+      "storage": {
+        "enabled": true,
+        "required": true,
+        "requestType": "onAppLaunch",
+        "requestContext": "عند فتح التطبيق",
+        "content": "نحتاج إلى الوصول إلى التخزين لحفظ البيانات.",
+        "fallbackAction": "disableFeature"
+      },
+      "contacts": {
+        "enabled": false,
+        "required": false,
+        "requestType": "onAction",
+        "requestContext": "عند مشاركة جهة اتصال",
+        "content": "نحتاج إلى الوصول إلى جهات الاتصال للمشاركة.",
+        "fallbackAction": "showWarning"
+      },
+      "dynamicPermissions": {
+        "enabled": true,
+        "fetchUrl": "https://example.com/permissions",
+        "updateFrequency": "daily"
+      }
+    },
+    "splashScreen": {
+      "enabled": true,
+      "duration": 3000,
+      "image": "https://example.com/splash.png",
+      "imageFetchType": "request"
+    },
+    "rateApp": {
+      "enabled": true,
+      "promptAfterLaunches": 5,
+      "content": "إذا كنت تحب التطبيق، يرجى تقييمه!"
+    },
+    "update": {
+      "enabled": true,
+      "checkFrequency": "daily",
+      "allowManualCheck": true
+    },
+    "stores": {
+      "googlePlay": true,
+      "appStore": false
+    },
+    "ui": {
+      "enableSlideMenu": false,
+      "enableMessageMarquee": true,
+      "enablePopMenu": true,
+      "enableAnimations": true
+    },
+    "cache": {
+      "enabled": true,
+      "version": "12",
+      "homeCacheVersion": "65",
+      "clearCacheOnUpdate": true,
+      "cacheControl": {
+        "maxAge": 3600,
+        "staleWhileRevalidate": 1800,
+        "dynamicCacheRefresh": true,
+        "cacheRefreshUrl": "https://example.com/cache/refresh"
+      }
+    },
+    "privacy": {
+      "policy": {
+        "type": "dynamic",
+        "url": "https://example.com/privacy",
+        "content": "يمكن جلب السياسة من رابط أو وضعها كنص هنا.",
+        "isMandatory": true,
+        "lastUpdated": "2023-10-01"
+      },
+      "termsOfService": {
+        "type": "dynamic",
+        "url": "https://example.com/terms",
+        "content": "يمكن جلب شروط الخدمة من رابط أو وضعها كنص هنا.",
+        "isMandatory": true,
+        "lastUpdated": "2023-10-01"
+      },
+      "gdprCompliant": true
+    },
+    "ads": {
+      "active": true,
+      "types": {
+        "banner": {
+          "enabled": true,
+          "id": ""
+        },
+        "interstitial": {
+          "enabled": false,
+          "id": ""
+        },
+        "native": {
+          "enabled": false,
+          "id": "",
+          "count": 0
+        },
+        "reward": {
+          "enabled": false,
+          "id": ""
+        },
+        "splash": {
+          "enabled": false,
+          "id": ""
+        },
+        "appOpen": {
+          "enabled": false,
+          "id": ""
+        }
+      },
+      "frequency": {
+        "banner": "everyScreen",
+        "interstitial": "every3Screens"
+      }
+    },
+    "network": {
+      "offlineMessage": {
+        "enabled": true,
+        "content": "يبدو أنك غير متصل بالإنترنت. يرجى التحقق من اتصالك.",
+        "displayType": "popup", 
+        "backgroundColor": "#FF0000",
+        "textColor": "#FFFFFF"
+      }
+    },
+    "screens": {
+      "login": {
+        "enabled": true,
+        "isMandatory": true
+      },
+      "favorites": {
+        "enabled": true
+      },
+      "activityLog": {
+        "enabled": true
+      }
+    },
+    "homeScreen": {
+      "header": {
+        "enabled": true,
+        "title": "Yemen4G",
+        "backgroundColor": "#0000FF",
+        "textColor": "#FFFFFF"
+      },
+      "footer": {
+        "enabled": true,
+        "backgroundColor": "#0000FF",
+        "textColor": "#FFFFFF",
+        "items": [
+          {
+            "name": "الصفحة الرئيسية",
+            "icon": "home",
+            "action": "navigateHome"
+          },
+          {
+            "name": "الإعدادات",
+            "icon": "settings",
+            "action": "navigateSettings"
+          }
+        ]
+      },
+      "content": {
+        "sections": [
+          {
+            "type": "banner",
+            "enabled": true
+          },
+          {
+            "type": "quickActions",
+            "enabled": true
+          },
+          {
+            "type": "news",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    "exitConfirmation": {
+      "enabled": true,
+      "content": "هل أنت متأكد أنك تريد الخروج؟",
+      "doubleTapToExit": true
+    },
+    "autoUpdateContent": {
+      "enabled": true,
+      "frequency": "hourly", 
+      "types": [
+        {
+          "name": "news",
+          "enabled": true
+        },
+        {
+          "name": "ads",
+          "enabled": true
+        }
+      ]
+    },
+    "search": {
+      "enabled": true,
+      "source": "local", 
+      "remoteSearchUrl": "https://example.com/search"
+    },
+    "sharing": {
+      "enabled": true,
+      "platforms": [
+        {
+          "name": "facebook",
+          "enabled": true
+        },
+        {
+          "name": "twitter",
+          "enabled": true
+        },
+        {
+          "name": "whatsapp",
+          "enabled": true
+        }
+      ]
+    },
+    "localNotifications": {
+      "enabled": true,
+      "frequency": "daily", 
+      "messages": [
+        {
+          "title": "تذكير",
+          "content": "لا تنسى التحقق من التحديثات الجديدة.",
+          "time": "10:00"
+        }
+      ]
+    },
+    "customization": {
+      "enabled": true,
+      "options": [
+        {
+          "name": "حجم الخط",
+          "values": ["صغير", "متوسط", "كبير"]
+        },
+        {
+          "name": "لون الخلفية",
+          "values": ["فاتح", "غامق", "مخصص"]
+        }
+      ]
+    },
+    "performance": {
+      "enabled": true,
+      "level": "medium", 
+      "autoOptimize": true
+    },
+    "backup": {
+      "enabled": true,
+      "frequency": "weekly", 
+      "cloudBackup": {
+        "enabled": true,
+        "provider": "googleDrive" 
+      }
+    },
+    "additionalSecurity": {
+      "encryption": {
+        "enabled": true,
+        "level": "high" 
+      },
+      "biometricAuth": {
+        "enabled": true,
+        "types": ["fingerprint", "faceID"]
+      }
+    },
+    "support": {
+      "enabled": true,
+      "contact": {
+        "email": "support@example.com",
+        "phone": "+967774555854",
+        "liveChat": {
+          "enabled": true,
+          "url": "https://example.com/chat"
+        }
+      }
+    },
+    "ratings": {
+      "enabled": true,
+      "frequency": "monthly",
+      "minLaunchesBeforePrompt": 5
+    }
+  },
+  "updateInfo": {
+    "versionName": "1.1.0",
+    "versionCode": "8",
+    "size": "55",
+    "actionType": "openUrl",
+    "action": "https://example.com/update",
+    "viewUpdateMessage": true,
+    "updateMessageTitle": "هناك تحديث جديد",
+    "updateMessageBody": "قم بالتحديث الى احدث اصدار",
+    "updateMessageNote": "",
+    "viewChangelogMessage": true,
+    "changelogMessageTitle": "ما الجديد في هذا الإصدار",
+    "changelogMessageBody": "إصلاحات وتحسينات عامة.",
+    "changelogMessageNote": "",
+    "image": "https://example.com",
+    "imageFetchType": "request",
+    "releaseDate": "2025-02-25 00:00:00",
+    "oldVersionsAvailableDate": "2025-02-30 12:55:00",
+    "stopOldVersions": false,
+    "forceUpdate": false,
+    "active": true
+  },
+  "developerInfo": {
+    "name": "فريق التطوير",
+    "nameEn": "Dev",
+    "descriptionShort": "",
+    "description": "وصف فريق التطوير.",
+    "email": "dev@example.com",
+    "website": "https://example.com",
+    "phoneNumber": "+967774555854",
+    "address": "yemen",
+    "image": "devlogo",
+    "imageFetchType": "painter",
+    "active": true,
+    "socialMediaList": [
+      {
+        "name": "تيليجرام",
+        "actionType": "openUrl",
+        "action": "https://t.me/team",
+        "description": "تواصل معنا",
+        "image": "https://example.com/telegram.svg",
+        "imageFetchType": "request",
+        "orderIndex": "1",
+        "active": true
+      }
+    ]
+  },
+  "messageBars": [
+    {
+      "content": "مرحبًا! هذا شريط رسائل ديناميكي.",
+      "actionType": "ShowDialog",
+      "action": "NewPasDialog",
+      "backgroundColor": "#FF5733",
+      "textColor": "#FFFFFF",
+      "orderIndex": "-1",
+      "active": true
+    },
+    {
+      "content": "رسالة أخرى في شريط الرسائل.",
+      "actionType": "shareMessage",
+      "action": "شارك التطبيق",
+      "backgroundColor": "#33FF57",
+      "textColor": "#000000",
+      "orderIndex": "-1",
+      "active": true
+    }
+  ],
+  "banners": [
+    {
+      "image": "https://example.com/banner1.jpg",
+      "imageFetchType": "request",
+      "actionType": "openUrl",
+      "action": "https://example.com",
+      "active": true
+    },
+    {
+      "image": "https://example.com/banner2.jpg",
+      "imageFetchType": "request",
+      "actionType": "downloadFile",
+      "action": "https://example.com/app.apk",
+      "active": true
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "title": "إشعار مهم",
+      "content": "هذا إشعار مهم من التطبيق.",
+      "image": "new",
+      "imageFetchType": "vector",
+      "actionType": "navigate",
+      "action": "fovScreen",
+      "timestamp": "2023-10-01T12:00:00Z",
+      "active": true
+    }
+  ],
+  "analytics": {
+    "enabled": true,
+    "providers": [
+      {
+        "name": "Google Analytics",
+        "key": "UA-XXXXX-Y",
+        "active": true
+      },
+      {
+        "name": "Firebase",
+        "key": "firebase_key",
+        "active": true
+      }
+    ]
+  },
+  "security": {
+    "encryption": {
+      "enabled": true,
+      "algorithm": "AES-256"
+    },
+    "twoFactorAuth": {
+      "enabled": false,
+      "methods": ["sms", "email"]
+    },
+    "dataRetention": {
+      "enabled": true,
+      "duration": "30 days"
+    }
+  },
+  "userPreferences": {
+    "theme": "dark",
+    "language": "ar",
+    "notifications": {
+      "promotional": true,
+      "system": true,
+      "updates": true
+    },
+    "privacy": {
+      "dataSharing": false,
+      "analytics": true
+    }
+  },
+  "additionalUrl": {
+    "balance": "https://connecttagye.com/",
+    "modemDefultSetting": "http://192.168.0.1/",
+    "modemHuaweiSetting": "http://192.168.8.1/",
+    "speedTest": "https://www.speedtest.net/",
+    "fastCom": "https://fast.com"
+  }
+}
