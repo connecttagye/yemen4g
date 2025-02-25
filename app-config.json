@@ -138,7 +138,7 @@
       "enabled": true,
       "duration": 3000,
       "image": "https://example.com/splash.png",
-      "imageFetchType": "request",
+      "imageFetchType": "request"
     },
     "rateApp": {
       "enabled": true,
