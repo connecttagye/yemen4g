@@ -533,6 +533,6 @@
     "modemDefultSetting": "http://192.168.0.1/",
     "modemHuaweiSetting": "http://192.168.8.1/",
     "speedTest": "https://fiber.google.com/speedtest/",
-    "fastCom": "https://fast.com",
+    "fastCom": "https://fast.com"
   }
 }
