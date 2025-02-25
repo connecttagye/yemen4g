@@ -532,7 +532,7 @@
     "balance": "https://connecttagye.com/yemen4g-balance",
     "modemDefultSetting": "http://192.168.0.1/",
     "modemHuaweiSetting": "http://192.168.8.1/",
-    "speedTest": "https://fiber.google.com/speedtest/",
+    "speedTest": "https://fast.com",
     "fastCom": "https://fast.com"
   }
 }
