@@ -194,7 +194,7 @@
       "types": {
         "banner": {
           "enabled": true,
-          "id": ""
+          "id": "ca-app-pub-5795447491202357/7643410746"
         },
         "interstitial": {
           "enabled": false,
@@ -529,10 +529,14 @@
     }
   },
   "additionalUrl": {
-    "balance": "https://connecttagye.com/",
+    "balance": "https://connecttagye.com/yemen4g-balance",
+    "balanceDelayTime": 1000,
     "modemDefultSetting": "http://192.168.0.1/",
+    "modemDefaultSettingUrl": "http://192.168.0.1/",
     "modemHuaweiSetting": "http://192.168.8.1/",
-    "speedTest": "https://www.speedtest.net/",
-    "fastCom": "https://fast.com"
+    "speedTest": "https://speedtest.yemen.net.ye/",
+    "fastCom": "https://fast.com",
+    "javaScriptYemen4gUrl": "https://api.yemen-4g-balance.connecttag.org/yemen4g.js?v=1"
   }
 }
+
