@@ -1,0 +1,55 @@
+{
+  "id": 1,
+  "code": "v1.0.0",
+  "name": "Initial Release",
+  "size": "50MB",
+  "description": "This is the initial release of the application.",
+  "note": "No special notes.",
+  "stopOldVersions": 1,
+  "oldVersionsAvailableDate": "2023-10-01",
+  "viewUpdateMessage": 1,
+  "updateMessageDescription": "Please update to the latest version for new features and bug fixes.",
+  "repeatViewUpdateMessage": 1,
+  "url": "https://example.com/download/v1.0.0",
+  "releaseDate": "2023-09-15",
+  "updateMessage": {
+    "id": 1,
+    "code": "msg001",
+    "title": "New Update Available",
+    "body": "We have released a new update with exciting features.",
+    "note": "No special notes.",
+    "image": "https://example.com/images/update.png",
+    "imageFetchType": "url",
+    "imageLink": "https://example.com/images/update.png",
+    "textColor": "#FFFFFF",
+    "colorBackground": "#000000",
+    "active": 1,
+    "createAt": "2023-09-10"
+  },
+  "advantagesNewUpdate": [
+    {
+      "id": 1,
+      "code": "adv001",
+      "type": "feature",
+      "title": "Improved Performance",
+      "description": "The new update includes performance improvements.",
+      "note": "No special notes.",
+      "createAt": "2023-09-10",
+      "image": "https://example.com/images/performance.png",
+      "imageFetchType": "url",
+      "active": 1
+    },
+    {
+      "id": 2,
+      "code": "adv002",
+      "type": "bugfix",
+      "title": "Bug Fixes",
+      "description": "Several bugs have been fixed in this update.",
+      "note": "No special notes.",
+      "createAt": "2023-09-10",
+      "image": "https://example.com/images/bugfix.png",
+      "imageFetchType": "url",
+      "active": 1
+    }
+  ]
+}
