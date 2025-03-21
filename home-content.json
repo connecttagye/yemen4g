@@ -2721,6 +2721,38 @@
       "id": "Ads",
       "priority": 6,
       "isVisible": true,
+        "modifier": {
+            "colors": {
+              "containerColor": "transparent",
+              "contentColor": "#000000",
+              "borderColor": "#CCCCCC"
+            },
+            "paddingValues": {
+              "top": 1,
+              "bottom": 1,
+              "start": 1,
+              "end": 1
+            },
+            "size": {
+              "width": 70,
+              "height": 150,
+              "minHeight": 150,    
+            },
+            "border": {
+              "radius": 5,
+              "color": "#CCCCCC",
+              "width": 1
+            },
+            "shadow": {
+              "color": "#000000",
+              "opacity": 0.5,
+              "radius": 3,
+              "offsetX": 2,
+              "offsetY": 2
+            },
+            "alignment": "CENTER",
+            "elevation": 0
+          },
       "items": [
         {
           "id": "ad1",
