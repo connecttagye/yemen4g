@@ -341,7 +341,7 @@
       "items": [
         {
           "pattern": "0-5",
-          "title":{
+          "value":{
             "type": "TEXT",
             "text": "طابت سهرتك",
             "color": "primary",
@@ -366,7 +366,7 @@
         },
         {
           "pattern": "6-11",
-          "title":{
+          "value":{
             "type": "TEXT",
             "text": "صباح الخير",
             "color": "primary",
@@ -391,7 +391,7 @@
         },
         {
           "pattern": "12-17",
-          "title":{
+          "value":{
             "type": "TEXT",
             "text": "نهارك سعيد",
             "color": "primary",
@@ -416,7 +416,7 @@
         },
         {
           "pattern": "18-23",
-          "title":{
+          "value":{
             "type": "TEXT",
             "text": "مساء الخير",
             "color": "primary",
