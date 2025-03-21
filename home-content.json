@@ -341,7 +341,7 @@
       "items": [
         {
           "timeRange": "0-5",
-          "value":{
+          "title":{
             "type": "TEXT",
             "text": "طابت سهرتك",
             "color": "primary",
@@ -366,7 +366,7 @@
         },
         {
           "timeRange": "6-11",
-          "value":{
+          "title":{
             "type": "TEXT",
             "text": "صباح الخير",
             "color": "primary",
@@ -391,7 +391,7 @@
         },
         {
           "timeRange": "12-17",
-          "value":{
+          "title":{
             "type": "TEXT",
             "text": "نهارك سعيد",
             "color": "primary",
@@ -416,7 +416,7 @@
         },
         {
           "timeRange": "18-23",
-          "value":{
+          "title":{
             "type": "TEXT",
             "text": "مساء الخير",
             "color": "primary",
