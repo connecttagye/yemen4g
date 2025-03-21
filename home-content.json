@@ -452,7 +452,13 @@
       "items": [
         {
           "id": "message1",
-          "title": "",
+            "title":{
+                "type": "TEXT",
+                "text": "",
+                "color": "#000000",
+                "size": 12,
+                "weight": "bold"
+              },
           "description": "",
           "content": "اهلا وسهلا بك في التطبيق",
           "image": {
@@ -468,7 +474,13 @@
         },
         {
           "id": "message2",
-          "title": "",
+               "title":{
+                "type": "TEXT",
+                "text": "",
+                "color": "#000000",
+                "size": 12,
+                "weight": "bold"
+              },
           "description": "",
           "content": "نتمنى لك وقت ممتع",
           "image": {
@@ -494,7 +506,13 @@
       "items": [
         {
           "id": "slide1",
-          "title": "",
+              "title":{
+                "type": "TEXT",
+                "text": "",
+                "color": "#000000",
+                "size": 12,
+                "weight": "bold"
+              },
           "description": "",
           "image": {
             "content": "https://lightsoftye.com/Ads/YemenView_Ad_Banner.jpg",
@@ -509,7 +527,13 @@
         },
         {
           "id": "slide2",
-          "title": "",
+                "title":{
+                "type": "TEXT",
+                "text": "",
+                "color": "#000000",
+                "size": 12,
+                "weight": "bold"
+              },
           "description": "",
           "image": {
             "content": "https://lightsoftye.com/Ads/hide_name.jpg",
@@ -524,7 +548,13 @@
         },
         {
           "id": "slide3",
-          "title": "",
+                "title":{
+                "type": "TEXT",
+                "text": "",
+                "color": "#000000",
+                "size": 12,
+                "weight": "bold"
+              },
           "description": "",
           "image": {
             "content": "https://lightsoftye.com/Ads/Lines_Ad_Banner.jpg",
@@ -2694,7 +2724,14 @@
       "items": [
         {
           "id": "ad1",
-          "title": "مكالمات مجانية غير محدودة",
+       
+              "title":{
+                "type": "TEXT",
+                "text": "مكالمات مجانية غير محدودة",
+                "color": "#000000",
+                "size": 12,
+                "weight": "bold"
+              },
           "description": "",
           "image": {
             "content": "https://ptc.gov.ye/wp-content/uploads/2024/04/free-call-to-landline.jpg",
@@ -2709,7 +2746,14 @@
         },
         {
           "id": "ad2",
-          "title": "تميز مع الرقم 10",
+                 "title":{
+                "type": "TEXT",
+                "text": "تميز مع الرقم 10",
+                "color": "#000000",
+                "size": 12,
+                "weight": "bold"
+              },
+        
           "description": "",
           "image": {
             "content": "https://ptc.gov.ye/wp-content/uploads/2025/01/free-10-number.jpg",
