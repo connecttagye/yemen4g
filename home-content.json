@@ -959,29 +959,6 @@
             "type": "SHOW_TOAST",
             "content": "قريباً"
           },
-          "badge": {
-            "text": "موقع",
-            "type": "TRENDING",
-            "shape": "PILL",
-            "color": "#CCCCCC",
-            "modifier": {
-              "colors": {
-                "containerColor": "#FFFFFF",
-                "contentColor": "#000000",
-                "borderColor": "#CCCCCC"
-              },
-              "size": {
-                "width": 300,
-                "height": 150
-              },
-              "paddingValues": {
-                "top": 2,
-                "bottom": 2,
-                "start": 2,
-                "end": 2
-              }
-            }
-          },
           "shape": "CIRCULAR",
           "layout": {
             "type": "GRID",
@@ -1131,7 +1108,7 @@
           },
           "subTitle" :{
             "type": "TEXT",
-            "text": "الباقات والتفاصيل",
+            "text": "معلومات حول الخدمة",
             "color": "secondary",
             "size": 16,
             "weight": "bold"
@@ -1223,8 +1200,8 @@
             "fetchType": "ImagePainter"
           },
           "action": {
-            "type": "OPEN_URL",
-            "content": "https://t.me/YemeniTelecom/32"
+            "type": "NAVIGATION",
+            "content": "Yemen4gInfo?type=package"
           },
           "shape": "CIRCULAR",
           "layout": {
