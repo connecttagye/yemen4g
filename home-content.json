@@ -340,7 +340,7 @@
       "id": "greeting1",
       "items": [
         {
-          "timeRange": "0-5",
+          "pattern": "0-5",
           "title":{
             "type": "TEXT",
             "text": "طابت سهرتك",
@@ -365,7 +365,7 @@
           "orderIndex": -1
         },
         {
-          "timeRange": "6-11",
+          "pattern": "6-11",
           "title":{
             "type": "TEXT",
             "text": "صباح الخير",
@@ -386,11 +386,11 @@
             "type": "OPEN_URL",
             "content": "https://play.google.com/store/apps/details?id=com.telecom.yemenview"
           },
-          "active": true,
+          "active": false,
           "orderIndex": -1
         },
         {
-          "timeRange": "12-17",
+          "pattern": "12-17",
           "title":{
             "type": "TEXT",
             "text": "نهارك سعيد",
@@ -415,7 +415,7 @@
           "orderIndex": -1
         },
         {
-          "timeRange": "18-23",
+          "pattern": "18-23",
           "title":{
             "type": "TEXT",
             "text": "مساء الخير",
