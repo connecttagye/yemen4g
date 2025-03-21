@@ -2736,7 +2736,7 @@
             "size": {
               "width": 70,
               "height": 300,
-              "maxHeight": 300,    
+              "maxHeight": 300    
             },
             "border": {
               "radius": 5,
