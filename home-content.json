@@ -37,305 +37,6 @@
   },
   "components": [
     {
-      "type": "HEADER",
-      "title":{
-        "type": "TEXT",
-        "text": "يمن فورجي",
-        "color": "#000000",
-        "size": 16,
-        "weight": "bold"
-      },
-      "subTitle" :{
-        "type": "TEXT",
-        "text": "",
-        "color": "#000000",
-        "size": 16,
-        "weight": "bold"
-      },
-      "showBackButton": false,
-      "modifier": {
-        "colors": {
-          "containerColor": "#FFFFFF",
-          "contentColor": "#000000",
-          "borderColor": "#CCCCCC",
-          "containerColors": ["#FFD5D4D4","#FFFDFDFD"]
-        },
-        "size": {
-          "width": 100,
-          "height": 400
-        },
-        "paddingValues": {
-          "top": 16,
-          "bottom": 16,
-          "start": 16,
-          "end": 16
-        },
-        "shadow": {
-          "color": "#000000",
-          "opacity": 0.1,
-          "radius": 4,
-          "offsetX": 0,
-          "offsetY": 2
-        },
-        "alignment": "CENTER"
-      },
-      "image": {
-        "content": "logo",
-        "fetchType": "ImagePainter"
-      },
-      "items": [
-        {
-          "type": "POP_MENU",
-          "id": "pop1",
-          "description": "",
-          "image": {
-            "content": "ic_menu_vertical",
-            "fetchType": "ImagePainter"
-          },
-          "action": {
-            "type": "OPEN_POPUP_MENU",
-            "content": "subPop1"
-          },
-          "active": true,
-          "orderIndex": 3,
-          "items": [
-            {
-              "type": "POP_MENU",
-              "id": "subPop1",
-              "title":{
-                "type": "TEXT",
-                "text": "السياسات",
-                "color": "#000000",
-                "size": 16,
-                "weight": "bold"
-              },
-              "description": "",
-              "content": "",
-              "image": {
-                "content": "ic_privacy_policy",
-                "fetchType": "ImagePainter"
-              },
-              "action": {
-                "type": "OPEN_POPUP_MENU",
-                "content": "privacy_policy"
-              },
-              "active": true,
-              "orderIndex": -1,
-              "items": [
-                {
-                  "type": "POP_MENU",
-                  "id": "subPop1",
-
-                  "title":{
-                    "type": "TEXT",
-                    "text": "سياسة الخصوصية",
-                    "color": "#000000",
-                    "size": 16,
-                    "weight": "bold"
-                  },
-                  "description": "",
-                  "content": "",
-                  "image": {
-                    "content": "MoreVert",
-                    "fetchType": "ImageVector"
-                  },
-                  "action": {
-                    "type": "OPEN_URL",
-                    "content": "https://api.yemen-4g-balance.connecttag.org/page/privacy-policy"
-                  },
-                  "active": true,
-                  "orderIndex": -1
-                }
-
-              ]
-            },
-            {
-              "type": "POP_MENU",
-              "id": "subPop1",
-              "title":{
-                "type": "TEXT",
-                "text": "حول",
-                "color": "#000000",
-                "size": 16,
-                "weight": "bold"
-              },
-              "description": "",
-              "content": "",
-              "image": {
-                "content": "ic_about",
-                "fetchType": "ImagePainter"
-              },
-              "action": {
-                "type": "OPEN_POPUP_MENU",
-                "content": "supItems"
-              },
-              "active": true,
-              "orderIndex": -1,
-              "items": [
-                {
-                  "type": "POP_MENU",
-                  "id": "subPop1",
-                  "title":{
-                    "type": "TEXT",
-                    "text": "حول التطبيق",
-                    "color": "#000000",
-                    "size": 16,
-                    "weight": "bold"
-                  },
-                  "description": "",
-                  "content": "",
-                  "image": {
-                    "content": "logo",
-                    "fetchType": "ImagePainter"
-                  },
-                  "action": {
-                    "type": "OPEN_DIALOG",
-                    "content": "aboutApp"
-                  },
-                  "active": true,
-                  "orderIndex": -1
-                },
-                {
-                  "type": "POP_MENU",
-                  "id": "subPop1",
-                  "title":{
-                    "type": "TEXT",
-                    "text": "المطور",
-                    "color": "#000000",
-                    "size": 16,
-                    "weight": "bold"
-                  },
-                  "description": "",
-                  "content": "",
-                  "image": {
-                    "content": "ic_help",
-                    "fetchType": "ImagePainter"
-                  },
-                  "action": {
-                    "type": "OPEN_DIALOG",
-                    "content": "aboutDev"
-                  },
-                  "active": true,
-                  "orderIndex": -1
-                }
-              ]
-            },
-            {
-              "type": "POP_MENU",
-              "id": "subPop3",
-              "title":{
-                "type": "TEXT",
-                "text": "التحديثات",
-                "color": "#000000",
-                "size": 16,
-                "weight": "bold"
-              },
-              "description": "",
-              "content": "",
-              "image": {
-                "content": "ic_updates",
-                "fetchType": "ImagePainter"
-              },
-              "action": {
-                "type": "OPEN_URL",
-                "content": "https://play.google.com/store/apps/details?id=com.telecom.yemen4g"
-              },
-              "active": true,
-              "orderIndex": -1
-            },
-            {
-              "type": "POP_MENU",
-              "id": "subPop4",
-              "title":{
-                "type": "TEXT",
-                "text": "اخرى",
-                "color": "#000000",
-                "size": 16,
-                "weight": "bold"
-              },
-              "description": "",
-              "content": "",
-              "image": {
-                "content": "ic_menu_vertical",
-                "fetchType": "ImagePainter"
-              },
-              "action": {
-                "type": "OPEN_POPUP_MENU",
-                "content": "supItems"
-              },
-              "active": true,
-              "orderIndex": -1,
-              "items": [
-                {
-                  "type": "POP_MENU",
-                  "id": "subPop1",
-                  "title":{
-                    "type": "TEXT",
-                    "text": "مشاركة",
-                    "color": "#000000",
-                    "size": 16,
-                    "weight": "bold"
-                  },
-                  "description": "",
-                  "content": "",
-                  "image": {
-                    "content": "logo",
-                    "fetchType": "ImagePainter"
-                  },
-                  "action": {
-                    "type": "SHARE_APP",
-                    "content": " قم بتحميل تطبيق رصيد يمن فورجي والذي يسهل عليك امكانية الاستعلام عن رصيد يمن فورجي والدخول الى اعدادات المودم وفحص السرعة بسهولة وسرعة دون الحاجة الى الدخول الى المتصفح والبحث عن الصفحة ... https://play.google.com/store/apps/details?id=com.telecom.yemen4g"
-                  },
-                  "active": true,
-                  "orderIndex": -1
-                }
-              ]
-
-            }
-
-          ]
-        },
-        {
-          "type": "ICON",
-          "id": "icon1",
-          "description": "",
-          "image": {
-            "content": "Settings",
-            "fetchType": "ImageVector",
-            "action": {
-              "type": "NAVIGATION",
-              "content": "Setting"
-            }
-          },
-          "action": {
-            "type": "NAVIGATION",
-            "content": "Setting"
-          },
-          "active": true,
-          "orderIndex": 1
-        },
-        {
-          "type": "ICON",
-          "id": "icon1",
-          "description": "",
-          "image": {
-            "content": "ic_help",
-            "fetchType": "ImagePainter",
-            "action": {
-              "type": "OPEN_URL",
-              "content": "https://play.google.com/store/apps/details?id=com.telecom.yemenview"
-            }
-          },
-          "action": {
-            "type": "OPEN_URL",
-            "content": "https://play.google.com/store/apps/details?id=com.telecom.yemenview"
-          },
-          "active": true,
-          "orderIndex": 2
-        }
-      ]
-    },
-    {
       "type": "GREETING",
       "id": "greeting1",
       "items": [
@@ -442,134 +143,6 @@
       ]
     },
     {
-      "type": "MARQUEE",
-      "id": "messageBar1",
-      "priority": 6,
-      "isVisible": true,
-      "displayMode": "SWITCHER",
-      "active": true,
-      "orderIndex": -1,
-      "items": [
-        {
-          "id": "message1",
-            "title":{
-                "type": "TEXT",
-                "text": "",
-                "color": "#000000",
-                "size": 12,
-                "weight": "bold"
-              },
-          "description": "",
-          "content": "اهلا وسهلا بك في التطبيق",
-          "image": {
-            "content": "https://lightsoftye.com/Ads/YemenView_Ad_Banner.jpg",
-            "fetchType": "ImageRequest"
-          },
-          "action": {
-            "type": "OPEN_URL",
-            "content": "https://play.google.com/store/apps/details?id=com.telecom.yemenview"
-          },
-          "active": true,
-          "orderIndex": -1
-        },
-        {
-          "id": "message2",
-               "title":{
-                "type": "TEXT",
-                "text": "",
-                "color": "#000000",
-                "size": 12,
-                "weight": "bold"
-              },
-          "description": "",
-          "content": "نتمنى لك وقت ممتع",
-          "image": {
-            "content": "https://lightsoftye.com/Ads/hide_name.jpg",
-            "fetchType": "ImageRequest"
-          },
-          "action": {
-            "type": "OPEN_URL",
-            "content": "https://play.google.com/store/apps/details?id=com.telecom.yemenview"
-          },
-          "active": true,
-          "orderIndex": -1
-        }
-      ]
-    },
-    {
-      "type": "SLIDER",
-      "id": "slider1",
-      "priority": 6,
-      "isVisible": true,
-      "active": true,
-      "orderIndex": -1,
-      "items": [
-        {
-          "id": "slide1",
-              "title":{
-                "type": "TEXT",
-                "text": "",
-                "color": "#000000",
-                "size": 12,
-                "weight": "bold"
-              },
-          "description": "",
-          "image": {
-            "content": "https://lightsoftye.com/Ads/YemenView_Ad_Banner.jpg",
-            "fetchType": "ImageRequest"
-          },
-          "action": {
-            "type": "OPEN_URL",
-            "content": "https://play.google.com/store/apps/details?id=com.telecom.yemenview"
-          },
-          "active": false,
-          "orderIndex": -1
-        },
-        {
-          "id": "slide2",
-                "title":{
-                "type": "TEXT",
-                "text": "",
-                "color": "#000000",
-                "size": 12,
-                "weight": "bold"
-              },
-          "description": "",
-          "image": {
-            "content": "https://lightsoftye.com/Ads/hide_name.jpg",
-            "fetchType": "ImageRequest"
-          },
-          "action": {
-            "type": "OPEN_URL",
-            "content": "https://play.google.com/store/apps/details?id=com.telecom.yemenview"
-          },
-          "active": true,
-          "orderIndex": -1
-        },
-        {
-          "id": "slide3",
-                "title":{
-                "type": "TEXT",
-                "text": "",
-                "color": "#000000",
-                "size": 12,
-                "weight": "bold"
-              },
-          "description": "",
-          "image": {
-            "content": "https://lightsoftye.com/Ads/Lines_Ad_Banner.jpg",
-            "fetchType": "ImageRequest"
-          },
-          "action": {
-            "type": "OPEN_URL",
-            "content": "https://play.google.com/store/apps/details?id=com.telecom.yemenview"
-          },
-          "active": true,
-          "orderIndex": -1
-        }
-      ]
-    },
-    {
       "type": "SECTION",
       "id": "site",
       "priority": 9,
@@ -651,7 +224,7 @@
           },
           "subTitle" :{
             "type": "TEXT",
-            "text": "انقر هنا للاستعلام عن رصيدك من التطبيق",
+            "text": "انقر هنا للاستعلام عن رصيدك ",
             "color": "secondary",
             "size": 10,
             "weight": "bold"
@@ -659,7 +232,7 @@
 
           "images": {
             "start": {
-              "content": "",
+              "content": "https://cdn.connecttag.org/assets/image/icon/technology/website.svg",
               "fetchType": "ImageRequest",
               "description": "",
               "action": {
@@ -1012,21 +585,21 @@
         "type": "TEXT",
         "text": "معلومات",
         "color": "#000000",
-        "size": 10,
+        "size": 14,
         "weight": "bold"
       },
       "subTitle" :{
         "type": "TEXT",
-        "text": "معلومات وارشادات حول الخدمة",
+        "text": "معلومات  حول الخدمة",
         "color": "secondary",
-        "size": 10,
+        "size": 12,
         "weight": "bold"
       },
       "images": {
         "start": {
           "content": "arrow_left.png",
           "fetchType": "ImageRequest",
-          "description": "أيقونة ",
+          "description": "",
           "action": {
             "type": "NAVIGATION",
             "destination": "previous_section"
@@ -1220,27 +793,6 @@
             "alignment": "CENTER",
             "showMore": true
           },
-          "badge": {
-            "text": "خارجي",
-            "color": "#FF0000",
-            "modifier": {
-              "colors": {
-                "containerColor": "#FFFFFF",
-                "contentColor": "#000000",
-                "borderColor": "#CCCCCC"
-              },
-              "size": {
-                "width": 300,
-                "height": 150
-              },
-              "paddingValues": {
-                "top": 2,
-                "bottom": 2,
-                "start": 2,
-                "end": 2
-              }
-            }
-          },
           "keyWords": "",
           "keyWordsEnglish": "",
           "description": "",
@@ -1276,187 +828,6 @@
             "alignment": "CENTER",
             "elevation": 2
           },
-          "properties": [
-            {
-              "id": "url_property",
-              "type": "url",
-              "label": "تيليجرام",
-              "name": "comp",
-              "value": "منشور تيليجرام",
-              "active": true,
-              "orderIndex": 1,
-              "description": " ",
-              "image": {
-                "content": "ic_about",
-                "fetchType": "ImagePainter",
-                "description": ""
-              },
-              "action": {
-                "type": "OPEN_URL",
-                "subType": "PRICE_DETAILS",
-                "content": "https://example.com/price-details"
-              },
-              "modifier": {
-                "colors": {
-                  "containerColor": "#FFFFFF",
-                  "contentColor": "#000000",
-                  "borderColor": "#CCCCCC"
-                },
-                "size": {
-                  "width": 100,
-                  "height": 400
-                },
-                "paddingValues": {
-                  "top": 8,
-                  "bottom": 8,
-                  "start": 16,
-                  "end": 16
-                }
-              }
-            }
-          ],
-          "active": true,
-          "orderIndex": 6,
-          "createAt": "2024-10-28T10:00:00Z"
-        },
-        {
-          "id": "aboutpay45",
-          "parentID": null,
-          "type": "CARD",
-          "title":{
-            "type": "TEXT",
-            "text": "طريقة التسديد",
-            "color": "primary",
-            "size": 10,
-            "weight": "bold"
-          },
-          "subTitle" :{
-            "type": "TEXT",
-            "text": "نقاط وطرق التسديد",
-            "color": "secondary",
-            "size": 10,
-            "weight": "bold"
-          },
-          "image": {
-            "content": "ic_about",
-            "fetchType": "ImagePainter"
-          },
-          "action": {
-            "type": "OPEN_URL",
-            "content": "https://t.me/YemeniTelecom/33"
-          },
-          "shape": "CIRCULAR",
-          "layout": {
-            "type": "ROW",
-            "containerShape": "HEXAGONAL",
-            "columns": 1,
-            "maxItems": 10,
-            "spacing": 10,
-            "scrollDirection": "VERTICAL",
-            "paddingValues": {
-              "top": 1,
-              "bottom": 1,
-              "start": 1,
-              "end": 1
-            },
-            "alignment": "CENTER",
-            "showMore": true
-          },
-          "badge": {
-            "text": "خارجي",
-            "color": "#FF0000",
-            "modifier": {
-              "colors": {
-                "containerColor": "#FFFFFF",
-                "contentColor": "#000000",
-                "borderColor": "#CCCCCC"
-              },
-              "size": {
-                "width": 300,
-                "height": 150
-              },
-              "paddingValues": {
-                "top": 2,
-                "bottom": 2,
-                "start": 2,
-                "end": 2
-              }
-            }
-          },
-          "keyWords": "",
-          "keyWordsEnglish": "",
-          "description": "",
-          "note": null,
-          "modifier": {
-            "colors": {
-              "containerColor": "#FFFFFF",
-              "contentColor": "#000000",
-              "borderColor": "#CCCCCC"
-            },
-            "paddingValues": {
-              "top": 1,
-              "bottom": 1,
-              "start": 1,
-              "end": 1
-            },
-            "size": {
-              "width": 300,
-              "height": 50
-            },
-            "border": {
-              "radius": 5,
-              "color": "#CCCCCC",
-              "width": 1
-            },
-            "shadow": {
-              "color": "#000000",
-              "opacity": 0.5,
-              "radius": 3,
-              "offsetX": 2,
-              "offsetY": 2
-            },
-            "alignment": "CENTER",
-            "elevation": 2
-          },
-          "properties": [
-            {
-              "id": "url_property",
-              "type": "url",
-              "label": "تيليجرام",
-              "name": "comp",
-              "value": "منشور تيليجرام",
-              "active": true,
-              "orderIndex": 1,
-              "description": " ",
-              "image": {
-                "content": "ic_about",
-                "fetchType": "ImagePainter",
-                "description": ""
-              },
-              "action": {
-                "type": "OPEN_URL",
-                "subType": "PRICE_DETAILS",
-                "content": "https://example.com/price-details"
-              },
-              "modifier": {
-                "colors": {
-                  "containerColor": "#FFFFFF",
-                  "contentColor": "#000000",
-                  "borderColor": "#CCCCCC"
-                },
-                "size": {
-                  "width": 100,
-                  "height": 400
-                },
-                "paddingValues": {
-                  "top": 8,
-                  "bottom": 8,
-                  "start": 16,
-                  "end": 16
-                }
-              }
-            }
-          ],
           "active": true,
           "orderIndex": 6,
           "createAt": "2024-10-28T10:00:00Z"
@@ -1473,21 +844,21 @@
         "type": "TEXT",
         "text": "ارشادات وتعليمات",
         "color": "#000000",
-        "size": 10,
+        "size": 14,
         "weight": "bold"
       },
       "subTitle" :{
         "type": "TEXT",
         "text": "معلومات وارشادات وشروحات",
         "color": "secondary",
-        "size": 10,
+        "size": 12,
         "weight": "bold"
       },
       "images": {
         "start": {
           "content": "arrow_left.png",
           "fetchType": "ImageRequest",
-          "description": "أيقونة ",
+          "description": " ",
           "action": {
             "type": "NAVIGATION",
             "destination": "previous_section"
@@ -1557,88 +928,6 @@
       },
       "items": [
         {
-          "id": "about5778",
-          "parentID": null,
-          "type": "CARD",
-          "title":{
-            "type": "TEXT",
-            "text": "الدخول الى اعدادات المودم",
-            "color": "primary",
-            "size": 10,
-            "weight": "bold"
-          },
-          "subTitle" :{
-            "type": "TEXT",
-            "text": "طريقة الدخول لاعدادات المودم",
-            "color": "secondary",
-            "size": 8,
-            "weight": "bold"
-          },
-          "image": {
-            "content": "ic_survey",
-            "fetchType": "ImagePainter"
-          },
-          "action": {
-            "type": "NAVIGATION",
-            "content": "Yemen4gInfo"
-          },
-          "shape": "CIRCULAR",
-          "layout": {
-            "type": "ROW",
-            "containerShape": "HEXAGONAL",
-            "columns": 1,
-            "maxItems": 10,
-            "spacing": 10,
-            "scrollDirection": "VERTICAL",
-            "paddingValues": {
-              "top": 1,
-              "bottom": 1,
-              "start": 1,
-              "end": 1
-            },
-            "alignment": "CENTER",
-            "showMore": true
-          },
-          "keyWords": "",
-          "keyWordsEnglish": "",
-          "description": "",
-          "note": null,
-          "modifier": {
-            "colors": {
-              "containerColor": "#FFFFFF",
-              "contentColor": "#000000",
-              "borderColor": "#CCCCCC"
-            },
-            "paddingValues": {
-              "top": 1,
-              "bottom": 1,
-              "start": 1,
-              "end": 1
-            },
-            "size": {
-              "width": 300,
-              "height": 50
-            },
-            "border": {
-              "radius": 5,
-              "color": "#CCCCCC",
-              "width": 1
-            },
-            "shadow": {
-              "color": "#000000",
-              "opacity": 0.5,
-              "radius": 3,
-              "offsetX": 2,
-              "offsetY": 2
-            },
-            "alignment": "CENTER",
-            "elevation": 2
-          },
-          "active": true,
-          "orderIndex": 6,
-          "createAt": "2024-10-28T10:00:00Z"
-        },
-        {
           "id": "pass15",
           "parentID": null,
           "type": "CARD",
@@ -1680,27 +969,6 @@
             },
             "alignment": "CENTER",
             "showMore": true
-          },
-          "badge": {
-            "text": "خارجي",
-            "color": "#FF0000",
-            "modifier": {
-              "colors": {
-                "containerColor": "#FFFFFF",
-                "contentColor": "#000000",
-                "borderColor": "#CCCCCC"
-              },
-              "size": {
-                "width": 300,
-                "height": 150
-              },
-              "paddingValues": {
-                "top": 2,
-                "bottom": 2,
-                "start": 2,
-                "end": 2
-              }
-            }
           },
           "keyWords": "",
           "keyWordsEnglish": "",
@@ -1755,7 +1023,7 @@
               "action": {
                 "type": "OPEN_URL",
                 "subType": "PRICE_DETAILS",
-                "content": "https://example.com/price-details"
+                "content": ""
               },
               "modifier": {
                 "colors": {
@@ -1823,27 +1091,6 @@
             "alignment": "CENTER",
             "showMore": true
           },
-          "badge": {
-            "text": "خارجي",
-            "color": "#FF0000",
-            "modifier": {
-              "colors": {
-                "containerColor": "#FFFFFF",
-                "contentColor": "#000000",
-                "borderColor": "#CCCCCC"
-              },
-              "size": {
-                "width": 300,
-                "height": 150
-              },
-              "paddingValues": {
-                "top": 2,
-                "bottom": 2,
-                "start": 2,
-                "end": 2
-              }
-            }
-          },
           "keyWords": "",
           "keyWordsEnglish": "",
           "description": "",
@@ -1897,7 +1144,7 @@
               "action": {
                 "type": "OPEN_URL",
                 "subType": "PRICE_DETAILS",
-                "content": "https://example.com/price-details"
+                "content": ""
               },
               "modifier": {
                 "colors": {
@@ -1939,7 +1186,7 @@
       },
       "subTitle" :{
         "type": "TEXT",
-        "text": " اضافية",
+        "text": "",
         "color": "secondary",
         "size": 12,
         "weight": "bold"
@@ -2299,7 +1546,7 @@
           },
           "subTitle" :{
             "type": "TEXT",
-            "text": "فيديوهات",
+            "text": "منصة لمشاهدة المحتوى",
             "color": "primary",
             "size": 10,
             "weight": "bold"
@@ -2385,7 +1632,7 @@
       },
       "subTitle" :{
         "type": "TEXT",
-        "text": "تواصل مع المؤسسة العامة للاتصالات عبر :",
+        "text": "يمكنكم التواصل مع المؤسسة العامة للاتصالات عبر :",
         "color": "#000000",
         "size": 10,
         "weight": "bold"
@@ -2698,49 +1945,49 @@
       "id": "Ads",
       "priority": 6,
       "isVisible": true,
-        "modifier": {
-            "colors": {
-              "containerColor": "transparent",
-              "contentColor": "#000000",
-              "borderColor": "#CCCCCC"
-            },
-            "paddingValues": {
-              "top": 1,
-              "bottom": 1,
-              "start": 1,
-              "end": 1
-            },
-            "size": {
-              "width": 70,
-              "height": 300,
-              "maxHeight": 300    
-            },
-            "border": {
-              "radius": 5,
-              "color": "#CCCCCC",
-              "width": 1
-            },
-            "shadow": {
-              "color": "#000000",
-              "opacity": 0.5,
-              "radius": 3,
-              "offsetX": 2,
-              "offsetY": 2
-            },
-            "alignment": "CENTER",
-            "elevation": 0
-          },
+      "modifier": {
+        "colors": {
+          "containerColor": "transparent",
+          "contentColor": "#000000",
+          "borderColor": "#CCCCCC"
+        },
+        "paddingValues": {
+          "top": 1,
+          "bottom": 1,
+          "start": 1,
+          "end": 1
+        },
+        "size": {
+          "width": 70,
+          "height": 300,
+          "maxHeight": 300
+        },
+        "border": {
+          "radius": 5,
+          "color": "#CCCCCC",
+          "width": 1
+        },
+        "shadow": {
+          "color": "#000000",
+          "opacity": 0.5,
+          "radius": 3,
+          "offsetX": 2,
+          "offsetY": 2
+        },
+        "alignment": "CENTER",
+        "elevation": 0
+      },
       "items": [
         {
           "id": "ad1",
-       
-              "title":{
-                "type": "TEXT",
-                "text": "مكالمات مجانية غير محدودة",
-                "color": "#000000",
-                "size": 12,
-                "weight": "bold"
-              },
+
+          "title":{
+            "type": "TEXT",
+            "text": "مكالمات مجانية غير محدودة",
+            "color": "#000000",
+            "size": 12,
+            "weight": "bold"
+          },
           "description": "",
           "image": {
             "content": "https://ptc.gov.ye/wp-content/uploads/2024/04/free-call-to-landline.jpg",
@@ -2755,14 +2002,14 @@
         },
         {
           "id": "ad2",
-                 "title":{
-                "type": "TEXT",
-                "text": "تميز مع الرقم 10",
-                "color": "#000000",
-                "size": 12,
-                "weight": "bold"
-              },
-        
+          "title":{
+            "type": "TEXT",
+            "text": "تميز مع الرقم 10",
+            "color": "#000000",
+            "size": 12,
+            "weight": "bold"
+          },
+
           "description": "",
           "image": {
             "content": "https://ptc.gov.ye/wp-content/uploads/2025/01/free-10-number.jpg",
