@@ -217,7 +217,7 @@
           "name": "ourBUTTON",
           "title":{
             "type": "TEXT",
-            "text": "الاستعلام عن الرصيد",
+            "text": "الاستعلام عن رصيد يمن فورجي",
             "color": "primary",
             "size": 10,
             "weight": "bold"
