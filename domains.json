@@ -1,4 +1,9 @@
 {
   "primaryDomain": "https://api.yemen-4g-balance.connecttag.org/",
-  "backupDomain": "https://raw.githubusercontent.com/"
+  "backupDomain": "https://api.yemen-4g-balance.connecttag.org/",
+    "cache": {
+        "appConfigVersion": 1,
+       "homeContentVersion": 1,
+      "listDataVersion": 1
+    }
 }
