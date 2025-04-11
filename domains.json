@@ -1,6 +1,12 @@
 {
   "primaryDomain": "https://api.yemen-4g-balance.connecttag.org/",
-  "backupDomain": "https://api.yemen-4g-balance.connecttag.org/",
+  "backupDomain": "https://api.yemen-4g-balance.connecttag.com/",
+    "endpoints": {
+    "appConfig": "api/v4/app-config.json",
+    "profile": "/user/profile",
+    "settings": "/user/settings",
+    "notifications": "/user/notifications"
+  },
     "cache": {
         "appConfigVersion": 1,
        "homeContentVersion": 1,
